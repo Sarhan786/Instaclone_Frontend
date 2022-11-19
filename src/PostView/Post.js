@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../Styles/Post.css";
 
-
 export default function Post() {
   const [users, setusers] = useState([]);
-
 
   useEffect(() => {
     axios
@@ -19,7 +17,6 @@ export default function Post() {
       });
   }, []);
 
-
   return users.map((user) => (
     <div className="postBox" key={user.name}>
       <div className="postHead">
@@ -32,11 +29,7 @@ export default function Post() {
         </div>
       </div>
       <div className="Image">
-        <img
-          className="mainImg"
-          src={user.PostImage}
-          alt=""
-        />
+        <img className="mainImg" src={user.PostImage} alt="" />
       </div>
       <div className="LikeDate">
         <div className="likebox">

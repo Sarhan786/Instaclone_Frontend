@@ -36,12 +36,13 @@ export default function UploadForm() {
       })
       .then((res) => {
         console.log(res);
+        nevigate("/postview");
       })
       .catch((err) => {
         console.log(err);
       });
       
-    nevigate("/postview");
+
   };
 
   const getInputChangeHandler = (key) => {
