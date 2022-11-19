@@ -9,7 +9,7 @@ export default function Post() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5050/show")
+      .get("https://sam-instaclone-api.herokuapp.com/show")
       .then((res) => {
         console.log(res.data.posts);
         setusers(res.data.posts);

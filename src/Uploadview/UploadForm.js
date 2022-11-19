@@ -31,7 +31,7 @@ export default function UploadForm() {
     console.log(formData);
 
     axios
-      .post("http://localhost:5050/upload", formData, {
+      .post("https://sam-instaclone-api.herokuapp.com/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then((res) => {
