@@ -9,7 +9,6 @@ export default function Post() {
     axios
       .get("https://sam-instaclone-api.herokuapp.com/show")
       .then((res) => {
-        console.log(res.data.posts);
         setusers(res.data.posts);
       })
       .catch((err) => {
