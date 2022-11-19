@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Landingpage from "./LandingPage/landing_page";
 import Postview from "./PostView/postview";
 import Uploadview from "./Uploadview/Uploadview";
